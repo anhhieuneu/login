@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="../css/dangnhap.css" />
+    <script src="../js/dangnhap.js"></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-wrapper">
+        <div class="login-header">
+          <div class="login-title">Đăng nhập</div>
+        </div>
+        <div class="login-body">
+          <form>
+            <div class="form-group">
+              <div class="input-wrapper">
+                <input
+                  class="login-input"
+                  type="text"
+                  placeholder="Email/Số điện thoại/Tên đăng nhập"
+                  autocomplete="on"
+                  name="loginKey"
+                  maxlength="128"
+                  aria-invalid="false"
+                  value=""
+                />
+              </div>
+              <div class="input-error" id="login-input-error"></div>
+            </div>
+            <div class="form-group">
+              <div class="input-wrapper">
+                <input
+                  class="login-input"
+                  type="password"
+                  placeholder="Mật khẩu"
+                  autocomplete="current-password"
+                  name="password"
+                  maxlength="16"
+                  aria-invalid="false"
+                  value=""
+                />
+                <button class="password-toggle">
+                  <!-- Button toggle mật khẩu -->
+                </button>
+              </div>
+              <div class="input-error" id="password-input-error"></div>
+            </div>
+            <button class="login-button" disabled>Đăng nhập</button>
+          </form>
+          <div class="forgot-password">
+            <a href="#" id="forgotPasswordLink">Quên mật khẩu</a>
+            <a href="#" id="loginWithSMSLink">Đăng nhập với SMS</a>
+            >
+          </div>
+          <div class="social-login">
+            <div class="separator">
+              <div class="separator-line"></div>
+              <span class="separator-text">hoặc</span>
+              <div class="separator-line"></div>
+            </div>
+            <div class="social-login-buttons">
+              <button class="social-login-button">
+                <div class="social-icon facebook"></div>
+                <div class="social-text">Facebook</div>
+              </button>
+              <button class="social-login-button">
+                <div class="social-icon google"></div>
+                <div class="social-text">Google</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="register-section">
+          <div class="register-text">
+            Bạn mới biết đến Shopee?
+            <a href="#" id="signupLink">Đăng ký</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
